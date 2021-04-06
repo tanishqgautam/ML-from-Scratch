@@ -76,7 +76,7 @@ class DecisionTree():
         
 
 
-    def computer_gain(self, feature, target, threshold):
+    def compute_gain(self, feature, target, threshold):
         classes = set(target)
         criterion = self.gini_impurity
         
@@ -102,7 +102,7 @@ class DecisionTree():
             thresholds = list(set(feature))
 
             for threshold in thresholds:
-                gain = self.computer_gain(feature, target, threshold)
+                gain = self.compute_gain(feature, target, threshold)
                 if gain > best_gain:
                     best_gain = gain
                     best_feature_index = feature_index
