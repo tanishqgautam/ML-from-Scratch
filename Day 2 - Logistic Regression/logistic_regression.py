@@ -14,6 +14,7 @@ class LogisticRegression:
         return 1 / (1 + np.exp(-z))
 
     def cost(self,y_predict,y):
+        print(z)
         return (-1 / self.m * np.sum(y * np.log(y_predict) + (1 - y) * np.log(1 - y_predict)))
 
 
@@ -48,6 +49,7 @@ if __name__ == "__main__":
     np.random.seed(1)
     X, y = make_blobs(n_samples=1000, centers=2)
     y = y[:, np.newaxis]
+    z = 5
     logreg = LogisticRegression(X)
     w, b = logreg.run(X, y)
     y_predict = logreg.predict(X)
