@@ -88,7 +88,7 @@ class NeuralNetwork:
                 self.update_weights(X[j],learning_rate)
                 error = self.mse(X,y)
                 total_error.append(error)
-                print('Epoch: #%s, MSE: %f' % (i, float(error)))
+                print('Epoch: %s, MSE: %f' % (i, float(error)))
 
         return total_error
 
