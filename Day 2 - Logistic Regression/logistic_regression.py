@@ -13,10 +13,11 @@ class LogisticRegression:
     def sigmoid(self,z):
         return 1 / (1 + np.exp(-z))
 
-    def cost(self,y_predict):
+    def cost(self,y_predict,y):
         return (-1 / self.m * np.sum(y * np.log(y_predict) + (1 - y) * np.log(1 - y_predict)))
 
-    def gradient(self, y_predict):
+
+    def gradient(self, y_predict,y):
         dw = 1 / self.m * np.dot(X.T, (y_predict - y))
         db = 1 / self.m * np.sum(y_predict - y)
         return dw, db
@@ -25,8 +26,8 @@ class LogisticRegression:
         for epoch in range(self.epochs + 1):
             
             y_predict = self.sigmoid(np.dot(X, self.weights) + self.bias)
-            cost = self.cost(y_predict)
-            dw, db = self.gradient(y_predict)
+            cost = self.cost(y_predict,y)
+            dw, db = self.gradient(y_predict,y)
 
             self.weights -= self.lr * dw
             self.bias -= self.lr * db
