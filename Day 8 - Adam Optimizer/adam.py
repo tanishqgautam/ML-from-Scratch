@@ -36,8 +36,9 @@ class Adam:
             
             if np.linalg.norm(theta - x) <= 0.001:
                 self.converged = True
+            x = theta
 
-            print("Iteration:", self.itr ,self.converged, theta)
+            print("Iteration:", self.itr ,self.converged, x)
 
 
 if __name__ == "__main__":
