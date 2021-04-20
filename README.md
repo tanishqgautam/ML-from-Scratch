@@ -6,12 +6,17 @@
 * Logistic Regression 
 * K Means Clustering
 * K Nearest Neighbours
+* Decision Trees
 * Naive Bayes
-* Support Vector Machine [TODO]
+* Support Vector Machine
 
 ## DEEP LEARNING TOPICS COVERED - FROM SCRATCH
 
 * Neural Networks
+* Adam Optimizer
 
+## TENSORFLOW/KERAS
 
-## TENSORFLOW/KERAS and PYTORCH [COMING SOON]
+* Convolutional Neural Networks in Tensorflow 2.0 (Image Classification)
+* LSTM Neural Networks in Tensorflow 2.0 (Sentiment Analysis)
+* Autoencoders in Tensorflow 2.0 (Image Denoising)
