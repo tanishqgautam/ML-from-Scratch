@@ -20,3 +20,4 @@
 * Convolutional Neural Networks in Tensorflow 2.0 (Image Classification)
 * LSTM Neural Networks in Tensorflow 2.0 (Sentiment Analysis)
 * Autoencoders in Tensorflow 2.0 (Image Denoising)
+* VGG-16 in Tensorflow 2.0 (Includes Checkpoint and Early Stopping)
