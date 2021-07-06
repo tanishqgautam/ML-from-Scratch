@@ -1,4 +1,4 @@
-# 💯 Days of Machine Learning and Deep Learning Code
+# ML from Scratch
 
 ## MACHINE LEARNING TOPICS COVERED - FROM SCRATCH
 
